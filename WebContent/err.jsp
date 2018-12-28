@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>err</title>
 </head>
-<body>
+<body bgcolor="#FBF7EC">
 未知的错误发生，2333！又崩了
 </body>
 </html>

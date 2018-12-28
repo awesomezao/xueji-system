@@ -11,7 +11,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>query</title>
 </head>
-<body>
+<body bgcolor="#FBF7EC">
 <%! String id,name,sex,age,jiguan,zhuanye,banji,minzu; %>
 <%! int i,j,k; %>
 <% 

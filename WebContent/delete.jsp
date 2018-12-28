@@ -11,7 +11,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>delete</title>
 </head>
-<body>
+<body bgcolor="#FBF7EC">
 <%
 id=request.getParameter("id");
 try{

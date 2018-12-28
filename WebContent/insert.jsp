@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>insert</title>
 </head>
-<body>
+<body bgcolor="#FBF7EC">
 <div align="center"> <font color="#000000" size="5">添加新纪录</font> </div>
 <form  name="form1" method="post" action="query.jsp" >
 <table width="35%" border="1" cellspacing="1" cellpadding="1"  align="center"    >

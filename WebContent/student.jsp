@@ -10,18 +10,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>student</title>
 </head>
-<body bgcolor="#ffffff">
+<body bgcolor="#FBF7EC">
 <div align="center"><font color="#000000" size="5">学籍管理系统</font>
 </div>
-<table  align="center" width="75%" border="1" cellspacing="1" cellpadding="1">
+<table  align="center" width="50%" border="1" cellspacing="1" cellpadding="1">
 <tr>
   <td width=16% align="center">学号</td>
   <td width=16% align="center">姓名</td>
-  <td width=8% align="center">性别</td>
-  <td width=8% align="center">年龄</td>
+  <td width=5% align="center">性别</td>
+  <td width=5% align="center">年龄</td>
   <td width=16% align="center">籍贯</td>
   <td width=12% align="center">专业</td>
-  <td width=12% align="center">班级</td>
+  <td width=5% align="center">班级</td>
   <td width=12% align="center">民族</td>
 </tr>
 <%! String u; %>
