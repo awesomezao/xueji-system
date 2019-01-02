@@ -44,7 +44,7 @@ try{
 	sql="insert into xueji (id,name,sex,age,jiguan,zhuanye,banji,minzu)";
 	sql=sql+"values('"+i+"','"+name+"','"+sex+"','"+j+"','"+jiguan+"','"+zhuanye+"','"+k+"','"+minzu+"')";
 	pstmt.executeUpdate(sql);
-	out.println("<font size=3 color=red>正在处理，请稍等...</font>meta http-equiv='refresh' content='2;url=list.jsp'>");
+	out.println("<font size=3 color=red>正在处理，请稍等...</font>meta http-equiv='refresh' content='2;url=manager.jsp'>");
 	rs.close();
 	pstmt.close();
 	conn.close();		

@@ -16,9 +16,9 @@
 id=request.getParameter("id");
 try{
 	pstmt=conn.prepareStatement(sql);
-	sql="delete from student where id='"+id+"'";
+	sql="delete from student where id="+id+"";
 	pstmt.executeUpdate(sql);
-	out.println("<font size=3 color=red>正在处理，情稍等...</font><meta http-equiv='refresh' content='2;url=list.jsp'>");
+	out.println("<font size=3 color=red>正在处理，情稍等...</font><meta http-equiv='refresh' content='2;url=manager.jsp'>");
 	pstmt.close();
 	conn.close();
 }
@@ -26,6 +26,6 @@ catch(Exception e){
 	response.sendRedirect("err.jsp");
 }
 %>
-fuck
+
 </body>
 </html>

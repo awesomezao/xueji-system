@@ -14,20 +14,22 @@
 <title>Insert title here</title>
 </head>
 <body bgcolor="#FBF7EC">
-<div align="center"><font color="#000000" size="5">学籍管理系统</font>
+<div align="center"><font color="#31708F" size="5">学籍管理系统</font>
 </div>
-<table  align="center" width="50%" border="1" cellspacing="1" cellpadding="1">
-<tr>
-  <td width=12% align="center">学号</td>
+<br/>
+<br/>
+<table  align="center" width="50%" border="1" cellspacing="0" cellpadding="0">
+<tr bgcolor=#F2F2F2>
+  <td width=15% align="center">学号</td>
   <td width=12% align="center">姓名</td>
-  <td width=5% align="center">性别</td>
-  <td width=5% align="center">年龄</td>
-  <td width=12% align="center">籍贯</td>
-  <td width=12% align="center">专业</td>
-  <td width=5% align="center">班级</td>
+  <td width=8% align="center">性别</td>
+  <td width=8% align="center">年龄</td>
+  <td width=15% align="center">籍贯</td>
+  <td width=15% align="center">专业</td>
+  <td width=8% align="center">班级</td>
   <td width=12% align="center">民族</td>
-  <td width=12% align="center">更改</td>
-  <td width=12% align="center">删除</td>
+  <td width=3% align="center" >更改</td>
+  <td width=3% align="center" >删除</td>
 </tr>
 <%
 
@@ -38,7 +40,7 @@ try
     rs= stmt.executeQuery(sql);
 while(rs.next()){
 %>
-<tr>
+<tr bgcolor=#FFFFFF>
   <td width=10% align="center"><%=rs.getObject(1)%></td>
   <td width=10% align="center"><%=rs.getObject(2)%></td>
   <td width=10% align="center"><%=rs.getObject(3)%></td>
@@ -62,6 +64,6 @@ conn.close();
 
 %>
 </table>
-<div align="center"><a href="insert.jsp">添加新纪录</a></div>
+<div align="center"><button type="button" style="height:40px;width:120px;"><a href="insert.jsp" style="text-decoration:none;">添加新纪录</a></button></div>
 </body>
 </html>

@@ -22,7 +22,7 @@ p2= request.getParameter("passwd");
  %>
  <%! String user,pass; %>
 <%
-String sql = "select id from 登陆 where id=? and passwd=?";
+String sql = "select id from 学生 where id=? and passwd=?";
 String sql2 = "select id from 管理员 where id=? and passwd=?";
 try {
 	   pstmt = conn.prepareStatement(sql); 
@@ -63,12 +63,13 @@ if(flag){%>
 <jsp:forward page="student.jsp" />
 <%} else if(flag2){
 	   %>
-	   <jsp:forward page="list.jsp" />
+	   <jsp:forward page="manager.jsp" />
 	   <% } else {
 		   %>
 		   <script>
-		   alert("账号或密码错误")
+		   alert("账号或密码错误，页面将在1秒内跳转登录界面")
 		   </script>
+		   <meta http-equiv=refresh  content="1;url=index.jsp" >
 	   <%}
 	
 %>

@@ -21,7 +21,7 @@
           <div class="login_name">
                <p>学籍管理系统</p>
           </div>
-          <form method="post" action="login.jsp" target="_blanck">
+          <form method="post" action="login.jsp" >
               <input name="id" type="text"  value="账号" onfocus="this.value=''" 
                      onblur="if(this.value==''){this.value='账号'}">
               <span id="password_text" onclick="this.style.display='none';document.getElementById('password').style.display='block';document.getElementById('password').focus().select();" >密码</span>

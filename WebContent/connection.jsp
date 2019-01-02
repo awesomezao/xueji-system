@@ -4,7 +4,6 @@
 <%! Connection conn;//定义数据库连接对象 %>
  <% 
     try {  Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");//加载驱动
-         out.println("加载驱动成功！");
          try{ String uri="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=xueji";//地址+端口号，数据库名字
 			  String user="sa";//登录名
 			  String password="123456";//登陆密码
