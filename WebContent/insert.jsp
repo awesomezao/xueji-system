@@ -7,12 +7,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>insert</title>
 </head>
-<body bgcolor="#FBF7EC">
+<body bgcolor="#F3F3F3" background="images/insert.jpg" style="background-size:100% 100%;">
 <div align="center"> <font color="#31708F" size="5">添加新纪录</font> </div>
 <br/>
 <br/>
 <form  name="form1" method="post" action="query.jsp" >
-<table width="35%" border="1" cellspacing="0" cellpadding="0"  align="center"    >
+<table width="35%" border="1" cellspacing="0" cellpadding="0"  align="center"   style= "opacity: 0.9;" >
 <tr bgcolor=#FFFFFF>
 <td width="50%" align="center">学号 </td>
 <td width="50%"> &nbsp;&nbsp;&nbsp;<input type="text" name="id" style="border:none" size="7"> </td>

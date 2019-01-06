@@ -10,13 +10,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>student</title>
 </head>
-<body bgcolor="#FBF7EC">
-<div align="center"><font color="#31708F" size="5">学籍管理系统</font>
+<body bgcolor="#F3F3F3" background="images/student.jpg" style="background-size:100% 100%;">
+<div align="center"><font color="#31708F" size="5">学籍信息</font>
 </div>
 <br/>
 <br/>
-<table  align="center" width="50%" border="1"  cellspacing="0" cellpadding="0">
-<tr bgcolor=#F2F2F2>
+<table  align="center" width="50%" border="1"  cellspacing="0" cellpadding="0" style= "opacity: 0.9;" >
+<tr bgcolor=#F3F3F3>
    <td width=15% align="center">学号</td>
   <td width=12% align="center">姓名</td>
   <td width=8% align="center">性别</td>
@@ -39,7 +39,7 @@ try
     rs= stmt.executeQuery(sql);
 while(rs.next()){
 %>
-<tr>
+<tr bgcolor=#FFFFFF>
   <td width=10% align="center"><%=rs.getObject(1)%></td>
   <td width=10% align="center"><%=rs.getObject(2)%></td>
   <td width=10% align="center"><%=rs.getObject(3)%></td>

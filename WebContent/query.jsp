@@ -10,7 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>query</title>
 </head>
-<body bgcolor="#FBF7EC">
+<body bgcolor="#F3F3F3">
 <%! String id,name,sex,age,jiguan,zhuanye,banji,minzu; %>
 <%! int i,j,k; %>
 <% 

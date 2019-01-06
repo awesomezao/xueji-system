@@ -16,7 +16,7 @@
         body {
             font: 14px/1.5 'Microsoft YaHei', '微软雅黑', Helvetica, Sans-serif;
             min-width: 1200px;
-            background: #FBF7EC;
+            background: #F3F3F3;
         }
 
         :focus {
@@ -37,7 +37,7 @@
         }
 
         .error-page {
-            background: #FBF7EC;
+            background: #F3F3F3;
             padding: 80px 0 180px
         }
 

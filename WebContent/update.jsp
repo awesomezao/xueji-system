@@ -11,7 +11,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>update</title>
 </head>
-<body bgcolor="#FBF7EC">
+<body bgcolor="#F3F3F3" background="images/update.jpg" style="background-size:100% 100%;">
 <%
 id=request.getParameter("id").trim();
 try{
@@ -24,7 +24,7 @@ try{
 <br/>
 <br/>
 <form name="form1" method="post" action="update query.jsp?id=<%=id%>">
-<table width="35%" border="1" cellspacing="0" cellpadding="0"  align="center"    >
+<table width="35%" border="1" cellspacing="0" cellpadding="0"  align="center"   style= "opacity: 0.9;" >
 <tr bgcolor=#FFFFFF>
 <td width="50%" align="center">学号 </td>
 <td width="50%"> &nbsp;&nbsp;&nbsp;<%=rs.getObject(1) %></td>

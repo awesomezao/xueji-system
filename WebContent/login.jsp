@@ -11,7 +11,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>login</title>
 </head>
-<body bgcolor="#FBF7EC">
+<body bgcolor="#F3F3F3">
 <%
 boolean flag = false;
 boolean flag2 = false;
