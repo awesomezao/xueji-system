@@ -152,7 +152,7 @@
         }
     </style>
 </head>
-<body>
+<body >
     <div class="error-page">
         <div class="error-page-container">
             <div class="error-page-main">
@@ -171,7 +171,7 @@
                         <h4>Solutions：</h4>
                         <ol>
                             <li><a href="index.jsp">返回首页</a></li>
-                            <li><a href="#">返回上页</a></li>
+                            <li><a href="#">联系我们</a></li>
                         </ol>
                     </div>
                 </div>

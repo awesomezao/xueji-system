@@ -12,12 +12,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Insert title here</title>
+<style type="text/css">
+#home {position:absolute;top:10px;right:10px;}
+#home img{width:30px;height:30px;padding-right:10px;}
+</style>
 </head>
 <body bgcolor="#F3F3F3" background="images/manager.jpg" style="background-size:100% 100%;">
 <div align="center"><font color="#31708F" size="5">学籍信息</font>
 </div>
 <br/>
 <br/>
+<div id="home">
+<img src="images/home.png"  alt="返回主页"  onclick="javascript:location.href='index.jsp'"/>
+<img src="images/back.png"  alt="返回上一页"  onclick="javascript:history.back(-1);"/>
+</div>
 <table  align="center" width="50%" border="1" cellspacing="0" cellpadding="0" style= "opacity: 0.9;">
 <tr bgcolor=#F3F3F3>
   <td width=15% align="center">学号</td>

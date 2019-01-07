@@ -11,39 +11,38 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>query</title>
 </head>
-<body bgcolor="#F3F3F3">
+<body bgcolor="#F3F3F3" background="images/success.jpg" style="background-size:100% 100%;">
 <%! String id,name,sex,age,jiguan,zhuanye,banji,minzu; %>
-<%! int i,j,k; %>
 <% 
-id=request.getParameter("id").trim();
-i=Integer.parseInt(id);
-name=request.getParameter("name").trim(); 
-name=new String(name.getBytes("ISO8859_1"),"GB2312");
-sex=request.getParameter("sex").trim(); 
-sex=new String(sex.getBytes("ISO8859_1"),"GB2312");
-age=request.getParameter("age").trim(); 
-j=Integer.parseInt(age);
-jiguan=request.getParameter("jiguan").trim(); 
-jiguan=new String(jiguan.getBytes("ISO8859_1"),"GB2312");
-zhuanye=request.getParameter("zhuanye").trim();
-zhuanye=new String(zhuanye.getBytes("ISO8859_1"),"GB2312");
-banji=request.getParameter("banji").trim(); 
-k=Integer.parseInt(banji);
-minzu=request.getParameter("minzu").trim(); 
-minzu=new String(minzu.getBytes("ISO8859_1"),"GB2312");
-
-if(name.equals("")){
-	response.sendRedirect("err.jsp");
-}
+request.setCharacterEncoding("utf-8");
+response.setCharacterEncoding("utf-8");
+id=request.getParameter("id");
+name=request.getParameter("name");
+sex=request.getParameter("sex"); 
+age=request.getParameter("age"); 
+jiguan=request.getParameter("jiguan"); 
+zhuanye=request.getParameter("zhuanye");
+banji=request.getParameter("banji"); 
+minzu=request.getParameter("minzu"); 
 
 try{
+	sql="update student set name=?,sex=?,age=?,jiguan=?,zhuanye=?,banji=?,minzu=? where id="+id+"";
 	pstmt=conn.prepareStatement(sql);
-	sql="update student set name='"+name+"','"+sex+"','"+j+"','"+jiguan+"','"+zhuanye+"','"+k+"','"+minzu+"' where i='"+i+"'";
-	pstmt.executeUpdate(sql);
-	out.println("<font size=3 color=red>正在处理，请稍等...</font>meta http-equiv='refresh' content='2;url=manager.jsp'>");
-	stmt.close();
+	pstmt.setString(1,name);
+	pstmt.setString(2,sex);
+	pstmt.setString(3,age);
+	pstmt.setString(4,jiguan);
+	pstmt.setString(5,zhuanye);
+	pstmt.setString(6,banji);
+	pstmt.setString(7,minzu);
+	pstmt.executeUpdate();
+	out.println("<font size=6 color=red>正在处理，请稍等...</font><meta http-equiv='refresh' content='2;url=manager.jsp'>");
+	pstmt.close();
 	conn.close();		
 }
 catch(Exception e){
 	response.sendRedirect("err.jsp");
 }
+%>
+</body>
+</html>

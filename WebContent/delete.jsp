@@ -11,21 +11,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>delete</title>
 </head>
-<body bgcolor="#F3F3F3">
+<body bgcolor="#F3F3F3" background="images/success.jpg" style="background-size:100% 100%;">
 <%
 id=request.getParameter("id");
 try{
-	pstmt=conn.prepareStatement(sql);
-	sql="delete from student where id="+id+"";
-	pstmt.executeUpdate(sql);
+	Statement stmt=conn.createStatement();
+	sql="delete from student where id='"+id+"'";
+	stmt.execute(sql);
 	out.println("<font size=3 color=red>正在处理，情稍等...</font><meta http-equiv='refresh' content='2;url=manager.jsp'>");
-	pstmt.close();
-	conn.close();
 }
 catch(Exception e){
 	response.sendRedirect("err.jsp");
 }
 %>
-
 </body>
 </html>
