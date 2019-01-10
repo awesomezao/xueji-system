@@ -57,6 +57,10 @@
 <td width="50%" align="center">民族</td>
 <td width="50%"> &nbsp;&nbsp;&nbsp;<input type="text" name="minzu" style="border:none" size="7"> </td>
 </tr>
+<tr bgcolor=#FFFFFF>
+<td width="50%" align="center">密码(默认)</td>
+<td width="50%"> &nbsp;&nbsp;&nbsp;<input type="text" name="passwd" style="border:none" size="7" value="123456"> </td>
+</tr>
 <tr align="center" bgcolor=#F2F2F2>
 <td  colspan="2" align="center" >
 <input type="submit" name="Submit" value="提交" >&nbsp;&nbsp;

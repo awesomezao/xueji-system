@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8" %>
 <%@ page import="java.sql.*" %>
 <%@ include file="connection.jsp" %>
+<%@ include file="search.jsp" %>
 <%! String sql; %>
 <%! ResultSet rs; //定义结果集对象%>
 <%! Statement stmt;//定义SQL语句对象 %>
