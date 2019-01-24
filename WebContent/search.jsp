@@ -116,7 +116,7 @@
 <body>
 <div class="container">
   <div id="search">
-   <form name="form1"  action="manager2.jsp" >
+   <form name="form1"  action="manager search.jsp" >
     <input type="text" name="id">
     <input class="button" type="submit" value="Search">
     </form>

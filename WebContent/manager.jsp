@@ -58,7 +58,7 @@ while(rs.next()){
   <td width=10% align="center"><%=rs.getObject(6)%></td>
   <td width=10% align="center"><%=rs.getObject(7)%></td>
   <td width=10% align="center"><%=rs.getObject(8)%></td>
-  <td width=10% align="center" ><a href="update.jsp?id=<%=rs.getObject(1)%>">修改</a></td>
+  <td width=10% align="center" ><a href="alter.jsp?id=<%=rs.getObject(1)%>">修改</a></td>
   <td width=10% align="center"><a href="delete.jsp?id=<%=rs.getObject(1)%>">删除</a></td>
 </tr>
 <%

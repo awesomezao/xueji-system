@@ -57,7 +57,7 @@ while(rs.next()){
   <td width=10% align="center"><%=rs.getObject(6)%></td>
   <td width=10% align="center"><%=rs.getObject(7)%></td>
   <td width=10% align="center"><%=rs.getObject(8)%></td>
-  <td width=10% align="center" ><a href="passwd.jsp?id=<%=rs.getObject(1)%>">修改密码</a></td>
+  <td width=10% align="center" ><a href="Spasswd update.jsp?id=<%=rs.getObject(1)%>">修改密码</a></td>
 </tr>
 <%
 }

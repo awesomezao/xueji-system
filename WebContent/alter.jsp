@@ -31,7 +31,7 @@ try{
 <img src="images/home.png"  alt="返回主页"  onclick="javascript:location.href='index.jsp'"/>
 <img src="images/back.png"  alt="返回上一页"  onclick="javascript:history.back(-1);"/>
 </div>
-<form name="form1" method="post" action="update query.jsp?id=<%=id%>">
+<form name="form1" method="post" action="alter update.jsp?id=<%=id%>">
 <table width="35%" border="1" cellspacing="0" cellpadding="0"  align="center"   style= "opacity: 0.9;" >
 <tr bgcolor=#FFFFFF>
 <td width="50%" align="center">学号 </td>
